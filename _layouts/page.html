@@ -1,0 +1,44 @@
+---
+layout: default
+---
+
+<div class="page">
+  <h1 class="page-title">{{ page.title }}</h1>
+  {{ content }}
+
+  {% comment %}
+  The code below dynamically generates a sidebar nav of pages with subpages.
+  {% endcomment %}
+
+
+  {% assign pages_list = site.pages | sort:"url" %}
+  {% assign is_empty = true %}
+
+  {% for node in pages_list %}
+  {% if node.title != null %}
+  {% if node.ftitle == page.title %}
+  {% if is_empty == true %}
+  {% assign is_empty = false %}
+  {% endif %}
+  {% endif %}
+  {% endif %}
+  {% endfor %}
+
+  {% if is_empty == false %}
+  <h2>相关文章</h2>
+  {% endif %}
+  <ul>
+    {% for node in pages_list %}
+    {% if node.title != null %}
+    {% if node.ftitle == page.title %}
+    {% if is_empty %}
+    {% assign is_empty = false %}
+    {% endif %}
+
+    <li><a href="{{ node.url | absolute_url }}">{{ node.title }}</a></li>
+    {% endif %}
+    {% endif %}
+    {% endfor %}
+  </ul>
+</div>
+

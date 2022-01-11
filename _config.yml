@@ -1,0 +1,19 @@
+# Setup
+title:               Java Coverage Tool With IDEA Plugin
+tagline:             'reference for build a java covorage tool'
+description:         'Jacoconut is a java coverage tool, written in java & gradle.'
+url:
+baseurl:             ''
+paginate:            5
+permalink:           pretty
+
+# About/contact
+author:
+  name:              Tomsawyerhu
+  url:               https://github.com/Tomsawyerhu/jacoconut.github.io
+  email:             1095549886@qq.com
+
+# Gems
+plugins:
+  - jekyll-paginate
+
