@@ -73,7 +73,7 @@ public class PopupDialogAction extends AnAction {
 
 **Step2** Registering a Custom Action
 
-Add the following text to [build.gradle](#Project Structure).
+Add the following text to [build.gradle](#project-structure).
 
 ```
 <actions>

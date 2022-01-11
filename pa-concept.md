@@ -7,9 +7,15 @@ ftitle: Program Analysis
 ## 静态分析基本概念
 
 ### 概念列表
-- [CFG](#CFG)
-- [May Analysis](#May Analysis)
-- [Must Analysis](#Must Analysis)
+- [CFG](#cfg)
+- [May Analysis](#may-analysis)
+- [Must Analysis](#must-analysis)
+- [INPUT & OUTPUT STATE](#input--output-state)
+- [Transfer Function](#transfer-function)
+- [SPLIT MEET](#split-meet)
+- [Forward Analysis](#forward-analysis)
+- [Backward Analysis](#backward-analysis)
+- [Basic Block](#basic-block)
 
 ### CFG
 *CFG*(Control Flow Graph)，控制流图。一个过程或程序的抽象表现，是用在编译器中的一个抽象数据结构，由编译器在内部维护，代表了一个程序执行过程中会遍历到的所有路径。它用图的形式表示一个过程内所有基本块执行的可能流向, 也能反映一个过程的实时执行过程。
@@ -45,15 +51,15 @@ OUT[s]=f(IN[s])
 
 其中，f代表转换函数。
 
-### 分叉、汇聚
+### SPLIT MEET
 
 {% highlight js %}
 
 一般 IN[s2]=OUT[s1]
 
-分叉 IN[s3]=IN[s2]=OUT[s1]
+分叉(SPLIT) IN[s3]=IN[s2]=OUT[s1]
 
-汇聚 meet(^)
+汇聚(MEET) 符号表示^
 
 {% endhighlight %}
 
