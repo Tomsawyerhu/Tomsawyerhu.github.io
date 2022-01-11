@@ -21,7 +21,7 @@ On the first screen, the type of project is configured:
 
 + In the Additional Libraries and Frameworks panel, select Java and IntelliJ Platform Plugin.
 + Optionally, you can add kotlin support.
-+ Click *Next*
++ Click <kbd>Next</kbd>
 
 ![](/public/pic/idea_plugin/1.png)
 
@@ -84,7 +84,7 @@ Add the following text to [build.gradle](#project-structure).
 </actions>
 ```
 
-You can also realize this by keyboard shortcut  *Alt + Shift + Enter*.
+You can also realize this by keyboard shortcut  <kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>Enter</kbd>.
 
 **Step3** Extending Method Body in Step 1
 
