@@ -10,6 +10,9 @@ ftitle: Program Analysis
   + [How to build callgraph?](#how-to-build-callgraph)
   + [Class Hierarchy Analysis](#class-hierarchy-analysis)
   + [Build global callgraph with CHA](#build-global-callgraph-with-cha)
+* [Cross-Procedural Analysis](#cross-procedural-analysis)
+  + [Interprocedural CFG](#interprocedural-cfg)
+  + [Interprocedural Dataflow Analysis](#interprocedural-dataflow-analysis)
 
 ## Inter procedural
 在过程内分析中，我们对于函数调用采用safe approximation的策略，这样会造成结果不准确，往往起不到好的优化效果。因此，考虑引入过程间分析。
