@@ -5,12 +5,12 @@ ftitle: Program Analysis
 ---
 
 ## Content
-* [Inner procedural](#inter-procedural)
+* [Inter procedural](#inter-procedural)
 * [CallGraph](#callgraph)
   + [How to build callgraph?](#how-to-build-callgraph)
   + [Class Hierarchy Analysis](#class-hierarchy-analysis)
   + [Build global callgraph with CHA](#build-global-callgraph-with-cha)
-* [Cross-Procedural Analysis](#cross-procedural-analysis)
+* [Inter-Procedural Analysis](#cross-procedural-analysis)
   + [Interprocedural CFG](#interprocedural-cfg)
   + [Interprocedural Dataflow Analysis](#interprocedural-dataflow-analysis)
 
