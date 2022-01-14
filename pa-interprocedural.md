@@ -195,8 +195,9 @@ ICFG, 过程间数据流图，由于也是数据流图，因而与过程内数�
 * Transfer function = Node transfer + Edge transfer
 * Edge Transfer = Call Edge Transfer + Return Edge Transfer
 ![](/public/pic/program_analysis/4.png)
+
 在Call Edge Transfer和Return Edge Transfer中，需要做数据转换，也就是将入参列表中参数与流入的数据流中数据对应，将返回值与returnsite处的变量对应。
 
-另外，在Call Edge Transfer需要额外做一件事，就是kill left hand variable，也就是图中的y
+另外，在Call Edge Transfer需要额外做一件事，就是kill left hand variable，也就是图中的y.
 ![](/public/pic/program_analysis/5.png)
 因为y的值由被调用函数返回值决定，因而不能被包括在本地数据流中。
