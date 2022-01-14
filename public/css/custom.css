@@ -1,0 +1,26 @@
+.tag1{
+  border-radius:2px;
+  border:1px solid #8AC007;
+  display:inline;
+  color: #8AC007;
+  float:right;
+  margin-left:5px;
+}
+
+.tag2{
+  border-radius:2px;
+  border:1px solid #5F9EA0;
+  display:inline;
+  color: #5F9EA0;
+  float:right;
+  margin-left:5px;
+}
+
+.tag3{
+  border-radius:2px;
+  border:1px solid #006400;
+  display:inline;
+  color: #006400;
+  float:right;
+  margin-left:5px;
+}

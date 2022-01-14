@@ -4,12 +4,24 @@ layout: default
 
 <div class="page">
   <h1 class="page-title">{{ page.title }}</h1>
+
+  <!-- 最多显示3个tag -->
+  {% assign c = 0 %}
+
+  {% if page.tags !=null %}
+  {% for t in page.tags %}
+  {% if c < 3 %}
+  {% assign c = c | plus: 1 %}
+  <div class="tag{{c}}">{{t}}</div>
+  {% endif %}
+  {% endfor %}
+  {% endif %}
+
   {{ content }}
 
   {% comment %}
   The code below dynamically generates a sidebar nav of pages with subpages.
   {% endcomment %}
-
 
   {% assign pages_list = site.pages | sort:"url" %}
   {% assign is_empty = true %}
