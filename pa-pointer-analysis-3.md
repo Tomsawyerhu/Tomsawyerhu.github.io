@@ -73,3 +73,7 @@ x.f()
     + 如果之前没有处理过这个方法，处理UnReached Method
 
 可以看到，对load、store、call语句的处理其实都涉及新指针的产生，这会导致PFG更新。
+
+算法流程最后的产出物包括：
++ 指针与指针集
++ Callgraph
